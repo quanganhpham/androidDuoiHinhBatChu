@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context=".view.activity.QuaManActivity">
+
+    <TextView
+        android:id="@+id/txtVictory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Victory"
+        android:textColor="#CA6400"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="cursive"/>
+
+    <TextView
+        android:id="@+id/txtAnswer"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/angrybird"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <ImageView
+            android:id="@+id/imgContinue"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_continue"/>
+        <ImageView
+            android:id="@+id/imgExit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_exit"/>
+    </LinearLayout>
+
+</LinearLayout>
